@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quran Institute with HAFIZ SAAD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f9f4;
+    }
+
+    
+
+    /* Navbar */
+    .navbar {
+      background-color: #1c3f2f;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    
+    .navbar a:hover {
+      color: #ffdd57;
+    }
+
+    /* Content Sections */
+    .section {
+      display: none;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .active {
+      display: block;
+    }
+
+    h1 {
+      color: #1c3f2f;
+    }
+
+    /* Buttons */
+    .contact-btns {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+      transition: 0.3s;
+    }
+
+    .btn i {
+      margin-right: 8px;
+    }
+
+    .whatsapp {
+      background-color: #25d366;
+    }
+
+    .facebook {
+      background-color: #3b5998;
+    }
+
+    .youtube {
+      background-color: #FF0000;
+    }
+
+    .btn:hover {
+      opacity: 0.8;
+      transform: scale(1.05);
+    }
+
+    /* form section */
+
+    .navbar::before{
+      content: "";
+      position: absolute;
+      height: 200%;
+      width: 98%;
+      background:url(quran.jpg)no-repeat center center/cover;
+      z-index: -1;
+      opacity: 0.4;
+    }
+
+
+
+    .form-section {
+      max-width: 500px;
+      margin: 50px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-section h2 {
+      text-align: center;
+      color: #1c3f2f;
+    }
+
+    .form-section label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    .form-section input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-section button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #1c3f2f;
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .form-section button:hover {
+      background-color: #145230;
+    }
+
+
+
+
+    /* midea quary */
+
+
+
+
+    @media (max-width: 600px) {
+  .contact-btns {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+
+
+      
+    
+    <audio id="tawwuz" src="tawwuz.mp3" preload="auto"></audio>
+
+
+</script>
+
+    <script>
+        window.addEventListener("DOMContentLoaded", function () {
+          const tawwuz = document.getElementById("tawwuz");
+          const bismillah = document.getElementById("bismillah");
+      
+          // Try playing the first one, then second
+          tawwuz.play().then(() => {
+            tawwuz.}).catch((error) => {
+            console.log("Autoplay blocked, trying with user interaction...");
+          });
+        });
+      </script>
+      
+
+
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div><i class="fas fa-quran"></i> Quran Institute</div>
+    <div>
+      <a href="#" onclick="showSection('home')">Home</a>
+      <a href="#" onclick="showSection('contact')">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- Sections -->
+  <div id="home" class="section active">
+    <h1>Welcome to Quran Institute with HAFIZ SAAD</h1>
+    <p>Learn Quran with love and dedication in Sahiwal.</p>
+  </div>
+
+  <div id="contact" class="section">
+    <h1>Contact Us</h1>
+    <p>Reach us directly on your favorite platforms:</p>
+
+    <div class="contact-btns">
+      <!-- WhatsApp -->
+      <a class="btn whatsapp" href="https://wa.me/923289017704" target="_blank">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+
+      <!-- Facebook -->
+      <a class="btn facebook" href="https://www.facebook.com/saadahmed" target="_blank">
+        <i class="fab fa-facebook-f"></i> Facebook
+      </a>
+
+      <!-- YouTube -->
+      <a class="btn youtube" href="http://www.youtube.com/@AshirAhmad-l9d9m" target="_blank">
+        <i class="fab fa-youtube"></i> YouTube
+      </a>
+    </div>
+  </div>
+
+
+  <!-- Admission Form -->
+  <div class="form-section">
+    <h2>Admission Form</h2>
+    <form id="admissionForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required />
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+
+            <!-- quran tajweed  -->
+
+            <section id="courses" style="padding:40px; text-align:center;">
+                <h2>Our Quran Courses</h2>
+                <div style="display:flex; justify-content:center; gap:30px; flex-wrap:wrap;">
+                  <div style="background:#fff; padding:20px; border-radius:10px; box-shadow:0 0 10px #ccc; width:250px;">
+                    <h3>Qaida for Beginners</h3>
+                    <p>Age: 5+ years<br>Duration: 3 Months</p>
+                  </div>
+              
+                  <div style="background:#fff; padding:20px; border-radius:10px; box-shadow:0 0 10px #ccc; width:250px;">
+                    <h3>Hifz-e-Quran</h3>
+                    <p>Full-time program<br>With Tajweed</p>
+                  </div>
+              
+                  <div style="background:#fff; padding:20px; border-radius:10px; box-shadow:0 0 10px #ccc; width:250px;">
+                    <h3>Tajweed Classes</h3>
+                    <p>Online & In-person<br>Morning / Evening</p>
+                  </div>
+                </div>
+            </section>
+
+
+<!-- Footer Section -->
+<footer style="background-color: #1c3f2f; color: white; padding: 40px 20px; text-align: center; font-family: 'Segoe UI', sans-serif;">
+    <h2 style="margin-bottom: 10px;">Quran Institute with Hafiz Saad</h2>
+    <p style="margin: 5px 0;">📍 Sahiwal, Pakistan</p>
+    <p style="margin: 5px 0;">📞 WhatsApp: <a href="https://wa.me/923289017704" target="_blank" style="color: #25d366; text-decoration: none;">0328 9017704</a></p>
+    <p style="margin: 5px 0;">📧 Email: <a href="mailto:ashirahmad1217@gmail.com" style="color: #ffdd57; text-decoration: none;">ashirahmad1217@gmail.com</a></p>
+  
+    <div style="margin-top: 20px;">
+      <a href="https://facebook.com/saadahmed" target="_blank" style="color: #fff; margin: 0 10px;"><i class="fab fa-facebook fa-lg"></i></a>
+      <a href="https://www.youtube.com/@AshirAhmad-l9d9m" target="_blank" style="color: #fff; margin: 0 10px;"><i class="fab fa-youtube fa-lg"></i></a>
+      <a href="https://wa.me/923289017704" target="_blank" style="color: #fff; margin: 0 10px;"><i class="fab fa-whatsapp fa-lg"></i></a>
+    </div>
+  
+    <blockquote style="margin-top: 25px; font-style: italic; font-size: 16px;">
+      "The best among you are those who learn the Quran and teach it." — Prophet Muhammad ﷺ
+    </blockquote>
+  
+    <p style="margin-top: 30px; font-size: 14px; color: #ccc;">
+      © 2025 Quran Institute with Hafiz Saad. All rights reserved.
+    </p>
+  </footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- javascript -->
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    const form = document.getElementById('admissionForm');
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault(); // form refresh na ho
+      alert("Aap ka form submit ho gaya hai! JazakAllah 🌙");
+      form.reset(); // form fields reset ho jaayein
+    });
+  </script>
+
+
+
+  <!-- JavaScript -->
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
